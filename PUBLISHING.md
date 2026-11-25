@@ -1,11 +1,13 @@
 # Publikacja — GitHub i portfolio
 
-Repozytorium jest już zainicjalizowane, ma pierwszy commit i tag `v1.0.0`. Nie ma jeszcze zdalnego repo ani pushu: w tym środowisku nie ma `gh` ani zapisanych danych logowania do GitHub. Poniżej są dokładne kroki.
+> **Status:** repo `kicporr/Rossmann-Sales-Forecasting` jest publiczne, CI zielone, release `v1.0.0` utworzony, a strona wdrożona na Cloudflare Pages. Pozostaje ręczne wgranie social preview w GitHub Settings (API tego nie udostępnia).
+
+Repozytorium jest zainicjalizowane, ma commit i tag `v1.0.0`. Poniżej są kroki odtwarzalne od zera.
 
 ## 1. GitHub — utworzenie repo i push
 
 1. Wejdź na [github.com/new](https://github.com/new).
-2. Nazwa: `rossmann-sales-forecasting`.
+2. Nazwa: `Rossmann-Sales-Forecasting`.
 3. Widoczność: **Public**.
 4. **Nie** dodawaj README, `.gitignore` ani licencji — one już są w lokalnym repo.
 5. Utwórz repo, a potem w katalogu projektu:
