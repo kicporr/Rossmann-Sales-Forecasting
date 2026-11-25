@@ -125,7 +125,7 @@ sitemap({
 - [ ] Kicker mówi `01-04`.
 - [ ] OG image zwraca 200 i ma 1200×630.
 - [ ] Sitemap zawiera oba URL-e (albo zostały zgłoszone ręcznie).
-- [ ] Link `github.com/kicporr/rossmann-sales-forecasting` działa po utworzeniu repo.
+- [ ] Link `github.com/kicporr/Rossmann-Sales-Forecasting` działa po utworzeniu repo.
 
 ## Czego nie ma w paczce
 

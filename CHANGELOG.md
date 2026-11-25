@@ -30,4 +30,4 @@ All notable changes to this project are documented here.
 - No `.pbix` file: Power BI Desktop was not available.
 - Submission was generated but not uploaded to Kaggle.
 
-[1.0.0]: https://github.com/kicporr/rossmann-sales-forecasting/releases/tag/v1.0.0
+[1.0.0]: https://github.com/kicporr/Rossmann-Sales-Forecasting/releases/tag/v1.0.0

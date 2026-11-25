@@ -1,7 +1,7 @@
 # Rossmann Store Sales Forecasting
 
-[![CI](https://github.com/kicporr/rossmann-sales-forecasting/actions/workflows/ci.yml/badge.svg)](https://github.com/kicporr/rossmann-sales-forecasting/actions/workflows/ci.yml)
-[![Python 3.12](https://img.shields.io/badge/python-3.12-1f47cf)](https://github.com/kicporr/rossmann-sales-forecasting/blob/main/requirements.txt)
+[![CI](https://github.com/kicporr/Rossmann-Sales-Forecasting/actions/workflows/ci.yml/badge.svg)](https://github.com/kicporr/Rossmann-Sales-Forecasting/actions/workflows/ci.yml)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-1f47cf)](https://github.com/kicporr/Rossmann-Sales-Forecasting/blob/main/requirements.txt)
 [![Holdout RMSPE](https://img.shields.io/badge/holdout%20RMSPE-0.1381-0f6b4f)](reports/model_comparison.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-121820)](LICENSE)
 
@@ -312,7 +312,7 @@ rossmann-sales-forecasting/
 
 ```bash
 # 0. Clone the repository
-git clone https://github.com/kicporr/rossmann-sales-forecasting.git
+git clone https://github.com/kicporr/Rossmann-Sales-Forecasting.git
 cd rossmann-sales-forecasting
 
 # 1. Install dependencies

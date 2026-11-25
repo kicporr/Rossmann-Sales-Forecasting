@@ -13,7 +13,7 @@ Repozytorium jest już zainicjalizowane, ma pierwszy commit i tag `v1.0.0`. Nie 
 ```bash
 cd rossmann-sales-forecasting
 
-git remote add origin https://github.com/kicporr/rossmann-sales-forecasting.git
+git remote add origin https://github.com/kicporr/Rossmann-Sales-Forecasting.git
 git push -u origin main
 git push origin v1.0.0
 ```
@@ -25,7 +25,7 @@ git push origin v1.0.0
 
 Po pushu sprawdź:
 
-- `https://github.com/kicporr/rossmann-sales-forecasting` otwiera się publicznie.
+- `https://github.com/kicporr/Rossmann-Sales-Forecasting` otwiera się publicznie.
 - README renderuje badges i obrazki.
 - `submission.csv` jest w repo, ale `data/raw`, `data/processed`, `outputs/models` i `dashboard/data/*.csv` — nie.
 - Link do case study w README działa po wdrożeniu strony (krok 2).
