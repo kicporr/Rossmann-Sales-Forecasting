@@ -1,0 +1,6 @@
+[data-reveal]{opacity:1!important;transform:none!important}
+.case-figure img{background:#fff}
+.case-section code{font-family:var(--mono);font-size:.92em;background:#e9eef2;padding:1px 5px;border-radius:2px}
+.case-section .rich-table-wrap{margin-top:28px}
+.case-results strong{font-variant-numeric:tabular-nums}
+@media (max-width:640px){.case-results strong{white-space:normal}}

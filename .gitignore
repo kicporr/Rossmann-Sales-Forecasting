@@ -1,0 +1,33 @@
+# Raw competition data (Kaggle terms: do not redistribute)
+data/raw/*
+!data/raw/.gitkeep
+
+# Processed data / model artifacts / predictions (regenerable)
+data/processed/*
+!data/processed/.gitkeep
+outputs/models/*
+!outputs/models/.gitkeep
+outputs/predictions/*
+!outputs/predictions/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Power BI exports are derived from Kaggle data: regenerate with `python -m src.dashboard_export`
+dashboard/data/*
+!dashboard/data/README.md
+
+# Local training logs (not part of the deliverable)
+outputs/metrics/*.log

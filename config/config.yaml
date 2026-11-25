@@ -1,0 +1,76 @@
+project:
+  name: rossmann-sales-forecasting
+  random_state: 42
+  target: Sales
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  dashboard_data: data/dashboard
+  outputs: outputs
+  figures: outputs/figures
+  metrics: outputs/metrics
+  predictions: outputs/predictions
+  models: outputs/models
+
+data:
+  train_file: train.csv
+  test_file: test.csv
+  store_file: store.csv
+  submission_file: sample_submission.csv
+
+split:
+  horizon_days: 48
+  holdout:
+    name: holdout
+    train_end: "2015-06-14"
+    val_start: "2015-06-15"
+    val_end: "2015-07-31"
+  validation_folds:
+    - name: fold_1
+      train_end: "2014-12-31"
+      val_start: "2015-01-01"
+      val_end: "2015-02-17"
+    - name: fold_2
+      train_end: "2015-02-17"
+      val_start: "2015-02-18"
+      val_end: "2015-04-06"
+    - name: fold_3
+      train_end: "2015-04-06"
+      val_start: "2015-04-07"
+      val_end: "2015-05-24"
+
+features:
+  lags: [1, 7, 14, 28, 365]
+  rolling_windows: [7, 28, 90, 365]
+  min_lag_for_rolling: 1
+
+models:
+  linear_regression:
+    fit_intercept: true
+  random_forest:
+    n_estimators: 60
+    max_depth: 18
+    min_samples_leaf: 10
+    max_features: 0.6
+    max_samples: 0.7
+    n_jobs: 6
+  xgboost:
+    n_estimators: 600
+    learning_rate: 0.05
+    max_depth: 8
+    min_child_weight: 6
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_lambda: 2.0
+    tree_method: hist
+    n_jobs: 6
+  ensemble:
+    name: ensemble_xgb_hist
+    weights:
+      xgboost: 0.65
+      historical_average: 0.35
+  sarimax:
+    store_id: 1
+    order: [1, 0, 1]
+    seasonal_order: [1, 1, 1, 7]

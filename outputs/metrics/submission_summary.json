@@ -1,0 +1,12 @@
+{
+  "rows": 41088,
+  "unique_ids": 41088,
+  "id_order_matches_sample": true,
+  "min_sales": 0.0,
+  "max_sales": 29259.628597248135,
+  "mean_sales": 5641.875135372625,
+  "median_sales": 5760.231252609437,
+  "share_zero_predictions": 0.14563862928348908,
+  "horizon_days": 48,
+  "model": "ensemble_xgb_hist"
+}

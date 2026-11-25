@@ -1,0 +1,250 @@
+{
+  "store_id": 1,
+  "stationarity": [
+    {
+      "series": "Chain daily sales",
+      "n": 942,
+      "adf_statistic": -4.761614524595634,
+      "p_value": 6.436731330558783e-05,
+      "used_lags": 20,
+      "critical_values": {
+        "1%": -3.437470108019385,
+        "5%": -2.8646832620852853,
+        "10%": -2.5684436698650503
+      },
+      "stationary_at_5pct": true
+    },
+    {
+      "series": "Chain daily sales - first difference",
+      "n": 941,
+      "adf_statistic": -14.008528601649742,
+      "p_value": 3.7500440046049845e-26,
+      "used_lags": 19,
+      "critical_values": {
+        "1%": -3.437470108019385,
+        "5%": -2.8646832620852853,
+        "10%": -2.5684436698650503
+      },
+      "stationary_at_5pct": true
+    },
+    {
+      "series": "Chain weekly sales",
+      "n": 135,
+      "adf_statistic": -4.857872718174268,
+      "p_value": 4.209320867193477e-05,
+      "used_lags": 2,
+      "critical_values": {
+        "1%": -3.4808880719210005,
+        "5%": -2.8836966192225284,
+        "10%": -2.5785857598714417
+      },
+      "stationary_at_5pct": true
+    },
+    {
+      "series": "Chain weekly sales - first difference",
+      "n": 134,
+      "adf_statistic": -8.569848427435899,
+      "p_value": 8.25421205013035e-14,
+      "used_lags": 4,
+      "critical_values": {
+        "1%": -3.482087964046026,
+        "5%": -2.8842185101614626,
+        "10%": -2.578864381347275
+      },
+      "stationary_at_5pct": true
+    },
+    {
+      "series": "Store 1 daily sales",
+      "n": 942,
+      "adf_statistic": -4.368104368168501,
+      "p_value": 0.0003378834614142412,
+      "used_lags": 21,
+      "critical_values": {
+        "1%": -3.4374778690219956,
+        "5%": -2.864686684217556,
+        "10%": -2.5684454926748583
+      },
+      "stationary_at_5pct": true
+    },
+    {
+      "series": "Store 1 daily sales - first difference",
+      "n": 941,
+      "adf_statistic": -11.4941793848935,
+      "p_value": 4.657503151741617e-21,
+      "used_lags": 20,
+      "critical_values": {
+        "1%": -3.4374778690219956,
+        "5%": -2.864686684217556,
+        "10%": -2.5684454926748583
+      },
+      "stationary_at_5pct": true
+    }
+  ],
+  "decomposition": {
+    "period_days": 7,
+    "seasonal_strength": 0.7609045411433653
+  },
+  "ols": {
+    "r_squared": 0.44444455032631236,
+    "adj_r_squared": 0.438687499034357,
+    "f_statistic": 95.0028463912901,
+    "f_pvalue": 1.5358617478841397e-109,
+    "n_obs": 781,
+    "durbin_watson": 0.8640952848525923,
+    "jarque_bera_p": 1.0081311745825928e-85,
+    "breusch_pagan_p": 0.0001087530217659371,
+    "residual_std": 0.15269702339272775
+  },
+  "ols_coefficients": [
+    {
+      "term": "Intercept",
+      "coefficient": 8.419,
+      "std_error": 0.0183,
+      "p_value": 0.0,
+      "ci_low": 8.3831,
+      "ci_high": 8.4549,
+      "pct_effect": 453145.2732
+    },
+    {
+      "term": "C(DayOfWeek, levels=[1, 2, 3, 4, 5, 6])[T.2]",
+      "coefficient": -0.0897,
+      "std_error": 0.0195,
+      "p_value": 0.0,
+      "ci_low": -0.128,
+      "ci_high": -0.0515,
+      "pct_effect": -8.5839
+    },
+    {
+      "term": "C(DayOfWeek, levels=[1, 2, 3, 4, 5, 6])[T.3]",
+      "coefficient": -0.1136,
+      "std_error": 0.0188,
+      "p_value": 0.0,
+      "ci_low": -0.1505,
+      "ci_high": -0.0767,
+      "pct_effect": -10.7389
+    },
+    {
+      "term": "C(DayOfWeek, levels=[1, 2, 3, 4, 5, 6])[T.4]",
+      "coefficient": -0.1393,
+      "std_error": 0.0201,
+      "p_value": 0.0,
+      "ci_low": -0.1788,
+      "ci_high": -0.0998,
+      "pct_effect": -13.0052
+    },
+    {
+      "term": "C(DayOfWeek, levels=[1, 2, 3, 4, 5, 6])[T.5]",
+      "coefficient": -0.07,
+      "std_error": 0.0204,
+      "p_value": 0.0006,
+      "ci_low": -0.1101,
+      "ci_high": -0.0299,
+      "pct_effect": -6.7614
+    },
+    {
+      "term": "C(DayOfWeek, levels=[1, 2, 3, 4, 5, 6])[T.6]",
+      "coefficient": 0.1215,
+      "std_error": 0.0224,
+      "p_value": 0.0,
+      "ci_low": 0.0776,
+      "ci_high": 0.1653,
+      "pct_effect": 12.916
+    },
+    {
+      "term": "Promo",
+      "coefficient": 0.2754,
+      "std_error": 0.0122,
+      "p_value": 0.0,
+      "ci_low": 0.2514,
+      "ci_high": 0.2994,
+      "pct_effect": 31.7073
+    },
+    {
+      "term": "SchoolHoliday",
+      "coefficient": 0.0014,
+      "std_error": 0.0172,
+      "p_value": 0.9355,
+      "ci_low": -0.0324,
+      "ci_high": 0.0351,
+      "pct_effect": 0.1394
+    },
+    {
+      "term": "trend_days",
+      "coefficient": -0.0001,
+      "std_error": 0.0,
+      "p_value": 0.0,
+      "ci_low": -0.0001,
+      "ci_high": -0.0001,
+      "pct_effect": -0.0104
+    }
+  ],
+  "sarimax": {
+    "aic": 13806.697369991594,
+    "bic": 13883.157928354558,
+    "ljung_box_lag7_p": 9.40712823649739e-05,
+    "ljung_box_lag14_p": 5.961120967085269e-06,
+    "jarque_bera_p": 0.0,
+    "residual_std": 684.6230634151931,
+    "converged": true,
+    "order": [
+      1,
+      0,
+      1
+    ],
+    "seasonal_order": [
+      1,
+      1,
+      1,
+      7
+    ]
+  },
+  "sarimax_holdout": {
+    "model": "sarimax",
+    "n_rows_total": 47,
+    "n_rows_scored": 41,
+    "rmspe": 0.12342707080581249,
+    "mae": 404.0652698726743,
+    "rmse": 498.31074001005305,
+    "wape": 0.09135950624413185,
+    "bias_mean": 319.7890018624869,
+    "bias_pct_of_mean": 0.07230456931293992
+  },
+  "store1_comparison": [
+    {
+      "model": "linear_regression",
+      "rmspe": 0.1032,
+      "mae": 367.0165,
+      "n": 41
+    },
+    {
+      "model": "random_forest",
+      "rmspe": 0.1115,
+      "mae": 399.9637,
+      "n": 41
+    },
+    {
+      "model": "sarimax",
+      "rmspe": 0.1234,
+      "mae": 404.0653,
+      "n": 41
+    },
+    {
+      "model": "xgboost",
+      "rmspe": 0.1264,
+      "mae": 433.7261,
+      "n": 41
+    },
+    {
+      "model": "seasonal_naive",
+      "rmspe": 0.1782,
+      "mae": 713.439,
+      "n": 41
+    },
+    {
+      "model": "historical_average",
+      "rmspe": 0.2017,
+      "mae": 669.7416,
+      "n": 41
+    }
+  ]
+}

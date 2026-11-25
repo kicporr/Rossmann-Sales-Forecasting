@@ -1,0 +1,495 @@
+{
+  "overview": {
+    "date_min": "2013-01-01",
+    "date_max": "2015-07-31",
+    "rows": 1017209,
+    "stores": 1115,
+    "total_sales": 5873180623.0,
+    "total_customers": 644041755.0,
+    "avg_daily_sales_open": 6955.514290755952,
+    "median_daily_sales_open": 6369.0,
+    "avg_daily_sales_all_rows": 5773.818972305593,
+    "avg_customers_open": 762.7283951055907,
+    "avg_basket": 9.119254536460973,
+    "open_rate": 0.8301066939045958,
+    "closed_rows": 172817,
+    "zero_sales_open": 54,
+    "zero_sales_share_of_open": 5.3086435530947915e-05,
+    "sales_share_top10pct_stores": 0.17792025259836794
+  },
+  "weekday": [
+    {
+      "DayOfWeek": 1,
+      "avg_sales": 8216.073,
+      "avg_customers": 855.445,
+      "days": 137560,
+      "avg_basket": 9.604
+    },
+    {
+      "DayOfWeek": 2,
+      "avg_sales": 7088.114,
+      "avg_customers": 769.987,
+      "days": 143961,
+      "avg_basket": 9.206
+    },
+    {
+      "DayOfWeek": 3,
+      "avg_sales": 6728.123,
+      "avg_customers": 740.599,
+      "days": 141936,
+      "avg_basket": 9.085
+    },
+    {
+      "DayOfWeek": 4,
+      "avg_sales": 6767.31,
+      "avg_customers": 755.57,
+      "days": 134644,
+      "avg_basket": 8.957
+    },
+    {
+      "DayOfWeek": 5,
+      "avg_sales": 7072.677,
+      "avg_customers": 781.772,
+      "days": 138640,
+      "avg_basket": 9.047
+    },
+    {
+      "DayOfWeek": 6,
+      "avg_sales": 5874.84,
+      "avg_customers": 660.178,
+      "days": 144058,
+      "avg_basket": 8.899
+    },
+    {
+      "DayOfWeek": 7,
+      "avg_sales": 8224.724,
+      "avg_customers": 1441.532,
+      "days": 3593,
+      "avg_basket": 5.706
+    }
+  ],
+  "promo": [
+    {
+      "Promo": 0,
+      "avg_sales": 5929.408,
+      "avg_customers": 696.857,
+      "days": 467496,
+      "avg_basket": 8.509
+    },
+    {
+      "Promo": 1,
+      "avg_sales": 8228.281,
+      "avg_customers": 844.434,
+      "days": 376896,
+      "avg_basket": 9.744
+    }
+  ],
+  "store_type": [
+    {
+      "StoreType": "a",
+      "avg_sales": 6925.168,
+      "avg_customers": 795.361,
+      "days": 457077,
+      "avg_basket": 8.707
+    },
+    {
+      "StoreType": "b",
+      "avg_sales": 10231.408,
+      "avg_customers": 2021.822,
+      "days": 15563,
+      "avg_basket": 5.06
+    },
+    {
+      "StoreType": "c",
+      "avg_sales": 6932.513,
+      "avg_customers": 815.466,
+      "days": 112978,
+      "avg_basket": 8.501
+    },
+    {
+      "StoreType": "d",
+      "avg_sales": 6822.142,
+      "avg_customers": 606.34,
+      "days": 258774,
+      "avg_basket": 11.251
+    }
+  ],
+  "assortment": [
+    {
+      "Assortment": "a",
+      "avg_sales": 6621.017,
+      "days": 444909
+    },
+    {
+      "Assortment": "b",
+      "avg_sales": 8639.346,
+      "days": 8212
+    },
+    {
+      "Assortment": "c",
+      "avg_sales": 7300.526,
+      "days": 391271
+    }
+  ],
+  "holiday": [
+    {
+      "StateHoliday": "0",
+      "avg_sales": 6953.515,
+      "avg_customers": 762.077,
+      "days": 843482
+    },
+    {
+      "StateHoliday": "a",
+      "avg_sales": 8487.471,
+      "avg_customers": 1279.173,
+      "days": 694
+    },
+    {
+      "StateHoliday": "b",
+      "avg_sales": 9887.89,
+      "avg_customers": 1686.89,
+      "days": 145
+    },
+    {
+      "StateHoliday": "c",
+      "avg_sales": 9743.746,
+      "avg_customers": 1569.225,
+      "days": 71
+    }
+  ],
+  "monthly": [
+    {
+      "month": "2013-01",
+      "avg_sales": 6239.641,
+      "total_sales": 180132207,
+      "days": 28869
+    },
+    {
+      "month": "2013-02",
+      "avg_sales": 6428.598,
+      "total_sales": 171534275,
+      "days": 26683
+    },
+    {
+      "month": "2013-03",
+      "avg_sales": 7212.834,
+      "total_sales": 201180369,
+      "days": 27892
+    },
+    {
+      "month": "2013-04",
+      "avg_sales": 6579.32,
+      "total_sales": 183431432,
+      "days": 27880
+    },
+    {
+      "month": "2013-05",
+      "avg_sales": 7076.218,
+      "total_sales": 185411063,
+      "days": 26202
+    },
+    {
+      "month": "2013-06",
+      "avg_sales": 6467.051,
+      "total_sales": 180702351,
+      "days": 27942
+    },
+    {
+      "month": "2013-07",
+      "avg_sales": 6923.155,
+      "total_sales": 208843882,
+      "days": 30166
+    },
+    {
+      "month": "2013-08",
+      "avg_sales": 6595.928,
+      "total_sales": 198042727,
+      "days": 30025
+    },
+    {
+      "month": "2013-09",
+      "avg_sales": 6363.388,
+      "total_sales": 178053963,
+      "days": 27981
+    },
+    {
+      "month": "2013-10",
+      "avg_sales": 6473.347,
+      "total_sales": 187662330,
+      "days": 28990
+    },
+    {
+      "month": "2013-11",
+      "avg_sales": 6904.51,
+      "total_sales": 196170924,
+      "days": 28412
+    },
+    {
+      "month": "2013-12",
+      "avg_sales": 8613.455,
+      "total_sales": 231710561,
+      "days": 26901
+    },
+    {
+      "month": "2014-01",
+      "avg_sales": 6539.403,
+      "total_sales": 187752787,
+      "days": 28711
+    },
+    {
+      "month": "2014-02",
+      "avg_sales": 6678.038,
+      "total_sales": 178924677,
+      "days": 26793
+    },
+    {
+      "month": "2014-03",
+      "avg_sales": 6654.021,
+      "total_sales": 193019854,
+      "days": 29008
+    },
+    {
+      "month": "2014-04",
+      "avg_sales": 7226.782,
+      "total_sales": 194544977,
+      "days": 26920
+    },
+    {
+      "month": "2014-05",
+      "avg_sales": 6948.12,
+      "total_sales": 194693257,
+      "days": 28021
+    },
+    {
+      "month": "2014-06",
+      "avg_sales": 7250.66,
+      "total_sales": 190047051,
+      "days": 26211
+    },
+    {
+      "month": "2014-07",
+      "avg_sales": 6891.48,
+      "total_sales": 173892707,
+      "days": 25233
+    },
+    {
+      "month": "2014-08",
+      "avg_sales": 6714.305,
+      "total_sales": 163748475,
+      "days": 24388
+    },
+    {
+      "month": "2014-09",
+      "avg_sales": 6756.588,
+      "total_sales": 164516168,
+      "days": 24349
+    },
+    {
+      "month": "2014-10",
+      "avg_sales": 6757.32,
+      "total_sales": 164216398,
+      "days": 24302
+    },
+    {
+      "month": "2014-11",
+      "avg_sales": 7539.604,
+      "total_sales": 173327953,
+      "days": 22989
+    },
+    {
+      "month": "2014-12",
+      "avg_sales": 8603.805,
+      "total_sales": 202120592,
+      "days": 23492
+    },
+    {
+      "month": "2015-01",
+      "avg_sales": 6913.178,
+      "total_sales": 198843730,
+      "days": 28763
+    },
+    {
+      "month": "2015-02",
+      "avg_sales": 6660.27,
+      "total_sales": 178275458,
+      "days": 26767
+    },
+    {
+      "month": "2015-03",
+      "avg_sales": 7071.241,
+      "total_sales": 205631683,
+      "days": 29080
+    },
+    {
+      "month": "2015-04",
+      "avg_sales": 7349.11,
+      "total_sales": 197918886,
+      "days": 26931
+    },
+    {
+      "month": "2015-05",
+      "avg_sales": 7308.497,
+      "total_sales": 189143897,
+      "days": 25880
+    },
+    {
+      "month": "2015-06",
+      "avg_sales": 7295.619,
+      "total_sales": 207363373,
+      "days": 28423
+    },
+    {
+      "month": "2015-07",
+      "avg_sales": 7033.345,
+      "total_sales": 212322616,
+      "days": 30188
+    }
+  ],
+  "yearly": [
+    {
+      "year": 2013,
+      "avg_sales": 6814.392,
+      "total_sales": 2302876084,
+      "days": 337943
+    },
+    {
+      "year": 2014,
+      "avg_sales": 7025.404,
+      "total_sales": 2180804896,
+      "days": 310417
+    },
+    {
+      "year": 2015,
+      "avg_sales": 7088.127,
+      "total_sales": 1389499643,
+      "days": 196032
+    }
+  ],
+  "distance": [
+    {
+      "bucket": "<500 m",
+      "stores": 220,
+      "avg_sales": 7581.487
+    },
+    {
+      "bucket": "500-999 m",
+      "stores": 110,
+      "avg_sales": 6642.812
+    },
+    {
+      "bucket": "1-2.5 km",
+      "stores": 250,
+      "avg_sales": 6816.426
+    },
+    {
+      "bucket": "2.5-5 km",
+      "stores": 186,
+      "avg_sales": 6784.789
+    },
+    {
+      "bucket": ">=5 km",
+      "stores": 349,
+      "avg_sales": 6782.03
+    }
+  ],
+  "stores": {
+    "avg_sales_mean": 6934.20844870795,
+    "avg_sales_min": 2703.7365728900254,
+    "avg_sales_max": 21757.48341836735,
+    "cv_median": 0.2640610373466659,
+    "cv_p90": 0.3515323424451898,
+    "n_high_volatility": 112,
+    "top5": [
+      {
+        "Store": 817,
+        "mean_sales": 21757.483,
+        "cv": 0.215,
+        "StoreType": "a"
+      },
+      {
+        "Store": 262,
+        "mean_sales": 20718.516,
+        "cv": 0.225,
+        "StoreType": "b"
+      },
+      {
+        "Store": 1114,
+        "mean_sales": 20666.562,
+        "cv": 0.167,
+        "StoreType": "a"
+      },
+      {
+        "Store": 251,
+        "mean_sales": 19123.068,
+        "cv": 0.186,
+        "StoreType": "a"
+      },
+      {
+        "Store": 842,
+        "mean_sales": 18574.796,
+        "cv": 0.204,
+        "StoreType": "d"
+      }
+    ],
+    "bottom5": [
+      {
+        "Store": 307,
+        "mean_sales": 2703.737,
+        "cv": 0.382,
+        "StoreType": "a"
+      },
+      {
+        "Store": 543,
+        "mean_sales": 2790.38,
+        "cv": 0.444,
+        "StoreType": "c"
+      },
+      {
+        "Store": 198,
+        "mean_sales": 2900.605,
+        "cv": 0.551,
+        "StoreType": "a"
+      },
+      {
+        "Store": 208,
+        "mean_sales": 2936.291,
+        "cv": 0.244,
+        "StoreType": "c"
+      },
+      {
+        "Store": 841,
+        "mean_sales": 2972.609,
+        "cv": 0.369,
+        "StoreType": "a"
+      }
+    ]
+  },
+  "tests": {
+    "promo_paired_t": {
+      "statistic": 74.9703699672907,
+      "p_value": 0.0,
+      "mean_uplift": 2298.6033243406846,
+      "median_uplift": 2192.7837962037966,
+      "n_stores": 1115,
+      "pct_stores_positive": 0.9991031390134529,
+      "cohens_dz": 2.245185456406972
+    },
+    "weekday_kruskal": {
+      "statistic": 43128.11523275597,
+      "p_value": 0.0
+    },
+    "store_type_kruskal": {
+      "statistic": 8221.020373466425,
+      "p_value": 0.0
+    },
+    "holiday_kruskal": {
+      "statistic": 74.49117401537761,
+      "p_value": 4.657540091304528e-16
+    },
+    "competition_spearman": {
+      "rho": -0.027865531089509194,
+      "p_value": 0.35257203983079394,
+      "n_stores": 1115
+    }
+  }
+}

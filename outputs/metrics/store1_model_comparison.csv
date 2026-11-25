@@ -1,0 +1,7 @@
+model,rmspe,mae,n
+linear_regression,0.1032,367.0165,41
+random_forest,0.1115,399.9637,41
+sarimax,0.1234,404.0653,41
+xgboost,0.1264,433.7261,41
+seasonal_naive,0.1782,713.439,41
+historical_average,0.2017,669.7416,41

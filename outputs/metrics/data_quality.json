@@ -1,0 +1,67 @@
+{
+  "train_rows": 1017209,
+  "train_columns": 33,
+  "test_rows": 41088,
+  "test_columns": 30,
+  "store_rows": 1115,
+  "train_date_range": [
+    "2013-01-01",
+    "2015-07-31"
+  ],
+  "test_date_range": [
+    "2015-08-01",
+    "2015-09-17"
+  ],
+  "train_stores": 1115,
+  "test_stores": 856,
+  "duplicate_store_date_train": 0,
+  "duplicate_store_date_test": 0,
+  "open_imputed_test": 11,
+  "closed_rows_train": 172817,
+  "zero_sales_rows_train": 172871,
+  "zero_sales_open_rows_train": 54,
+  "negative_sales_rows": 0,
+  "tests_passed": true,
+  "checks": [
+    {
+      "check": "row_count_preserved_by_join",
+      "passed": true,
+      "detail": "LEFT JOIN must not duplicate rows"
+    },
+    {
+      "check": "unique_store_date_train",
+      "passed": true,
+      "detail": "one row per store-day"
+    },
+    {
+      "check": "unique_store_date_test",
+      "passed": true,
+      "detail": "one row per store-day"
+    },
+    {
+      "check": "no_missing_store_type",
+      "passed": true,
+      "detail": "all stores matched store.csv"
+    },
+    {
+      "check": "non_negative_sales",
+      "passed": true,
+      "detail": "Sales >= 0"
+    },
+    {
+      "check": "date_ranges_contiguous",
+      "passed": true,
+      "detail": "test starts the day after train"
+    },
+    {
+      "check": "all_test_stores_in_train",
+      "passed": true,
+      "detail": "cold-start stores require separate handling"
+    },
+    {
+      "check": "submission_rows_match_test",
+      "passed": true,
+      "detail": "official test split contains 41,088 store-day rows"
+    }
+  ]
+}
