@@ -257,12 +257,13 @@ Full recommendations, with observation → conclusion → business meaning → l
 
 ## Dashboard
 
-Power BI Desktop is not available in the build environment, so the project provides a complete, reproducible specification instead of a fabricated `.pbix`:
+The ready-to-open report is **`dashboard/Rossmann-Sales-Dashboard.pbix`**. It has three pages (overview, drivers, forecast/error), an import data model and the aggregated data cached inside the file; open it without any external CSV. Refreshing the model requires the flat files in `dashboard/data/`.
 
-* `dashboard/dashboard_specification.md` - data model, relationships, three page layouts, interactions.
+* `dashboard/Rossmann-Sales-Dashboard.pbix` - working Power BI report with the Rossmann model and measures.
+* `dashboard/dashboard_specification.md` - data model, relationships, page layouts and interactions.
 * `dashboard/dax_measures.md` - 30+ production-ready DAX measures, including RMSPE and WAPE.
-* `dashboard/data/` - flat-file exports for a one-click import.
-* `dashboard/mockups/` - three high-fidelity page mockups (HTML + PNG).
+* `dashboard/data/` - flat-file exports used by the model queries.
+* `dashboard/mockups/` - high-fidelity page mockups (HTML + PNG) kept as design references.
 
 ![Sales Overview](dashboard/mockups/page1_sales_overview.png)
 
@@ -295,7 +296,7 @@ rossmann-sales-forecasting/
 │   ├── create_tables.sql
 │   ├── analytical_queries.sql   # 13 queries with CTE / window functions
 │   └── build_database.py
-├── dashboard/                   # spec, DAX, mockups, data export
+├── dashboard/                   # working .pbix, spec, DAX, mockups, data export
 ├── reports/                     # EDA, model comparison, business recommendations
 ├── docs/                        # methodology, learning guide, CV, interview Q&A
 ├── portfolio/                   # PL/EN case study + home-page integration snippets
@@ -364,7 +365,7 @@ The notebooks are already executed and can be run top-to-bottom; 01-04 do not de
 * **Hierarchical reconciliation** (store → region → chain) so that store forecasts sum to a coherent chain plan.
 * **External data**: weather, local events, competitor openings, school calendars.
 * **MLflow / DVC** for experiment tracking and data versioning.
-* **Power BI file** built from the provided specification in an environment with Power BI Desktop.
+* **Power BI service deployment** (the `.pbix` is local-only; publishing needs a workspace account).
 
 ---
 
