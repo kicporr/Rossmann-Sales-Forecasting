@@ -34,7 +34,7 @@ portfolio
 
 ## Social preview
 
-Upload `docs/social-preview.png` (1200×630). It is the same asset as the case
+Upload `docs/social-preview.png` (1280×640). It is the same asset as the case
 study OG image and shows the holdout RMSPE, the baseline delta and a dashboard
 screenshot.
 
