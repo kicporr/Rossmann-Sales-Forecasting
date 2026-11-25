@@ -257,7 +257,7 @@ Full recommendations, with observation → conclusion → business meaning → l
 
 ## Dashboard
 
-The ready-to-open report is **`dashboard/Rossmann-Sales-Dashboard.pbix`**. It has three pages (overview, drivers, forecast/error), an import data model and the aggregated data cached inside the file; open it without any external CSV. To refresh it, regenerate the flat files with `python -m src.dashboard_export` into `dashboard/data/`.
+The ready-to-open report is **`dashboard/Rossmann-Sales-Dashboard.pbix`**. It has three pages (overview, drivers, forecast/error), an import data model and the aggregated data cached inside the file; open it without any external CSV. To refresh it, regenerate the flat files with `python -m src.dashboard_export` into `dashboard/data/` and update the M source paths: the committed queries point at the build-time export folder, not at the repository.
 
 * `dashboard/Rossmann-Sales-Dashboard.pbix` - working Power BI report with the Rossmann model and measures.
 * `dashboard/screenshots/` - real screenshots exported from the `.pbix` file, one per page.
