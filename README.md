@@ -7,7 +7,7 @@
 
 **An end-to-end analytics and forecasting project on 1.0 million store-days of German drugstore sales.**
 
-The project predicts daily turnover for 856 stores over a 48-day horizon, compares econometric and machine-learning approaches, and packages the result as a reproducible pipeline, a SQL layer, a Power BI specification and a portfolio-ready report.
+The project predicts daily turnover for 856 stores over a 48-day horizon, compares econometric and machine-learning approaches, and packages the result as a reproducible pipeline, a SQL layer, a working Power BI dashboard (`.pbix`) and a portfolio-ready report.
 
 > **Scope:** portfolio project for a Junior Data Analyst / Junior Data Scientist role. It is deliberately honest about what the data can and cannot support: no causal claims, no fabricated metrics, and a documented level bias in the holdout.
 
@@ -77,7 +77,7 @@ Key facts established in `notebooks/01_data_understanding.ipynb`:
 | Modelling | scikit-learn, XGBoost, statsmodels |
 | Visualisation | matplotlib, seaborn |
 | Database | SQLite (window functions, CTEs, JOINs) |
-| Dashboard | Power BI specification, DAX measures, HTML mockups |
+| Dashboard | Working `.pbix`, DAX measures, HTML mockups |
 | Quality | pytest (17 tests), automated leakage and data-quality checks |
 | Reproducibility | YAML configuration, fixed random seeds, one-command pipeline |
 
