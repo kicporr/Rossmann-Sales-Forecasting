@@ -69,7 +69,7 @@ npm run build
 ## 4. Czego nie robić
 
 - Nie commituj `data/raw`, `data/processed`, `outputs/models`, `outputs/predictions` ani `dashboard/data/*.csv` — to dane Kaggle lub artefakty pochodne.
-- Nie wgrywaj `.pbix`, którego nie ma; dashboard jest specyfikacją, nie plikiem.
+- Nie zastępuj działającego `.pbix` makietą ani specyfikacją. Plik jest w `dashboard/` i zawiera dane w cache.
 - Nie wysyłaj submission na Kaggle bez własnego konta i świadomej zgody.
 - Nie zmieniaj wyniku `0.1381` na „accuracy 86%” — to RMSPE na holdoucie, nie accuracy.
 

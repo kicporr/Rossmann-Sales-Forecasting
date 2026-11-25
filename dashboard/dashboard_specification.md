@@ -5,12 +5,13 @@
 **Canvas:** 16:9, 1280 x 720 px (Power BI default), light theme  
 **Audience:** category managers, store operations, demand planning
 
-Power BI Desktop is not installed in the build environment, so this repository does **not** contain a fabricated `.pbix` file. Instead it ships:
+The repository contains the working **`dashboard/Rossmann-Sales-Dashboard.pbix`**: three pages, an import model and aggregated data cached in the file. The screenshots were exported from that file, not drawn as mockups.
 
-* a complete, regenerable data export in `dashboard/data/`,
+* `dashboard/Rossmann-Sales-Dashboard.pbix` - the working report.
+* `dashboard/screenshots/` - real page screenshots exported from the `.pbix`.
+* a regenerable data export in `dashboard/data/` (produced by `src.dashboard_export`),
 * a documented star schema and relationship map,
 * production-ready DAX measures in `dashboard/dax_measures.md`,
-* three high-fidelity page mockups in `dashboard/mockups/`,
 * step-by-step rebuild instructions (section 6).
 
 ---
@@ -168,8 +169,8 @@ Accessibility: minimum 10 pt body text, never encode meaning by colour alone (ba
 4. Create the relationships listed in section 1.
 5. Mark `DimDate` as the date table.
 6. Add the measures from `dashboard/dax_measures.md` (Modeling > New measure).
-7. Build the three pages following the layouts above. Use the mockups in `dashboard/mockups/` as a visual reference, not as a pixel-perfect contract.
-8. Save as `rossmann_sales.pbix` (not committed; the file is binary and environment-specific).
+7. Build the three pages following the layouts above. The real screenshots in `dashboard/screenshots/` show the current design.
+8. The committed report is `dashboard/Rossmann-Sales-Dashboard.pbix`; a rebuild can replace it after checking the page totals against the Python metrics.
 
 **Refresh:** replace the CSVs with a new export and hit Refresh. The Python pipeline is deterministic (`random_state = 42`), so the same inputs produce the same forecasts.
 

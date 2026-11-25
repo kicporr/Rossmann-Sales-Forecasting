@@ -6,7 +6,7 @@ Use these values in **Settings → General** and **Settings → Social preview**
 
 **Description (≤350 characters):**
 
-> End-to-end Rossmann store sales forecasting: data quality, SQL, 46 leakage-safe features, rolling-origin validation and a 65/35 XGBoost + historical-average ensemble. Holdout RMSPE 0.1381, 39.5% better than the baseline. Power BI specification and portfolio case study included.
+> End-to-end Rossmann store sales forecasting: data quality, SQL, 46 leakage-safe features, rolling-origin validation and a 65/35 XGBoost + historical-average ensemble. Holdout RMSPE 0.1381, 39.5% better than the baseline. Working Power BI dashboard (.pbix, 3 pages) and portfolio case study included.
 
 **Website:**
 

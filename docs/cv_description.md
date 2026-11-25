@@ -8,9 +8,9 @@
 
 **Prognozowanie dziennej sprzedaży sklepów Rossmann (Python, SQL, Power BI)**
 
-Projekt end-to-end na 1,017 mln rekordów store-days: czyszczenie danych i walidacja jakości, analiza eksploracyjna (14 wykresów), model SQL z 13 zapytaniami (JOIN, CTE, funkcje okna), inżynieria cech bez wycieku danych oraz porównanie 7 wariantów: historical average, seasonal naive, regresja liniowa, random forest, XGBoost, SARIMAX i ensemble 65/35. Walidacja rolling-origin z horyzontem 48 dni i nietkniętym holdoutem. Ensemble 65% XGBoost + 35% średniej historycznej osiągnął RMSPE **0,138** na holdoucie vs **0,228** dla baseline'u (poprawa ~40%); zidentyfikowano i jawnie zaraportowano bias -7,9%. Dostarczono prognozę 41 088 rekordów, specyfikację dashboardu Power BI z miarami DAX oraz 17 testów automatycznych, w tym test antyleakowy.
+Projekt end-to-end na 1,017 mln rekordów store-days: czyszczenie danych i walidacja jakości, analiza eksploracyjna (14 wykresów), model SQL z 13 zapytaniami (JOIN, CTE, funkcje okna), inżynieria cech bez wycieku danych oraz porównanie 7 wariantów: historical average, seasonal naive, regresja liniowa, random forest, XGBoost, SARIMAX i ensemble 65/35. Walidacja rolling-origin z horyzontem 48 dni i nietkniętym holdoutem. Ensemble 65% XGBoost + 35% średniej historycznej osiągnął RMSPE **0,138** na holdoucie vs **0,228** dla baseline'u (poprawa ~40%); zidentyfikowano i jawnie zaraportowano bias -7,9%. Dostarczono prognozę 41 088 rekordów, działający dashboard Power BI (.pbix) z 3 stronami i ponad 30 miarami DAX oraz 17 testów automatycznych, w tym test antyleakowy.
 
-**Stack:** Python (pandas, scikit-learn, XGBoost, statsmodels), SQL (SQLite), Power BI (specyfikacja + DAX), pytest, Git.
+**Stack:** Python (pandas, scikit-learn, XGBoost, statsmodels), SQL (SQLite), Power BI (.pbix + DAX), pytest, Git.
 
 **Case study:** [kacper-teichert.pages.dev/projekty/rossmann](https://kacper-teichert.pages.dev/projekty/rossmann/)
 
@@ -20,9 +20,9 @@ Projekt end-to-end na 1,017 mln rekordów store-days: czyszczenie danych i walid
 
 **Rossmann Store Sales Forecasting (Python, SQL, Power BI)**
 
-End-to-end project on 1.017M store-day records: data cleaning and quality validation, exploratory analysis (14 annotated charts), a SQL layer with 13 analytical queries (JOIN, CTE, window functions), leakage-safe feature engineering, and a model comparison covering historical average, seasonal naive, linear regression, random forest, XGBoost and SARIMAX. Rolling-origin validation with a 48-day horizon and an untouched holdout. A 65% XGBoost + 35% historical-average ensemble reached **0.138 RMSPE** on the holdout vs **0.228** for the baseline (~40% improvement); a -7.9% bias was identified and reported transparently. Delivered a 41,088-row submission, a Power BI specification with DAX measures, and 17 automated tests including an anti-leakage test.
+End-to-end project on 1.017M store-day records: data cleaning and quality validation, exploratory analysis (14 annotated charts), a SQL layer with 13 analytical queries (JOIN, CTE, window functions), leakage-safe feature engineering, and a model comparison covering historical average, seasonal naive, linear regression, random forest, XGBoost and SARIMAX. Rolling-origin validation with a 48-day horizon and an untouched holdout. A 65% XGBoost + 35% historical-average ensemble reached **0.138 RMSPE** on the holdout vs **0.228** for the baseline (~40% improvement); a -7.9% bias was identified and reported transparently. Delivered a 41,088-row submission, a working Power BI dashboard (.pbix) with 3 pages and 30+ DAX measures, and 17 automated tests including an anti-leakage test.
 
-**Stack:** Python (pandas, scikit-learn, XGBoost, statsmodels), SQL (SQLite), Power BI (specification + DAX), pytest, Git.
+**Stack:** Python (pandas, scikit-learn, XGBoost, statsmodels), SQL (SQLite), Power BI (.pbix + DAX), pytest, Git.
 
 **Case study:** [kacper-teichert.pages.dev/en/projects/rossmann](https://kacper-teichert.pages.dev/en/projects/rossmann/)
 
@@ -39,7 +39,7 @@ End-to-end project on 1.017M store-day records: data cleaning and quality valida
 > • analizę EDA (14 wykresów) i warstwę SQL z 13 zapytaniami (CTE, funkcje okna),
 > • porównanie 7 wariantów: od historical average po XGBoost, SARIMAX i ensemble 65/35,
 > • walidację rolling-origin i nietknięty holdout,
-> • dashboard Power BI (specyfikacja, 30+ miar DAX, makiety),
+> • dashboard Power BI (.pbix, 3 strony, 30+ miar DAX),
 > • prognozę 41 088 rekordów i README umożliwiające reprodukcję.
 >
 > Wynik: ensemble XGBoost + średnia historyczna RMSPE 0,138 vs baseline 0,228 na holdoucie. Równie ważne: model zaniża poziom lata 2015 o ~8% — ten bias jest opisany, a nie ukryty. W biznesie to różnica między „model działa” a „model działa i wiadomo, kiedy mu nie wierzyć”.
@@ -55,7 +55,7 @@ End-to-end project on 1.017M store-day records: data cleaning and quality valida
 > • EDA (14 charts) and a SQL layer with 13 queries (CTEs, window functions),
 > • a comparison of 7 candidates, from historical average to XGBoost, SARIMAX and a 65/35 ensemble,
 > • rolling-origin validation and an untouched holdout,
-> • a Power BI specification with 30+ DAX measures and page mockups,
+> • a working Power BI dashboard (.pbix) with 30+ DAX measures,
 > • a 41,088-row submission and a reproducible README.
 >
 > Result: XGBoost + historical-average ensemble RMSPE 0.138 vs 0.228 baseline on the holdout. Equally important: the model under-forecasts the 2015 summer level by ~8%. That bias is documented, not hidden — in business it is the difference between "the model works" and "the model works and we know when not to trust it".
@@ -72,7 +72,7 @@ End-to-end project on 1.017M store-day records: data cleaning and quality valida
 * „Ensemble XGBoost + średnia historyczna poprawił RMSPE o ~24% względem baseline'u na foldach walidacyjnych i o ~40% na holdoucie.”
 * „Zaimplementowałem test antyleakowy, który perturbuje przyszłą sprzedaż i sprawdza, czy cechy historyczne się nie zmieniają.”
 * „Zidentyfikowałem bias -7,9% na holdoucie i opisałem, jak go kalibrować.”
-* „Warstwa SQL i specyfikacja Power BI są odtwarzalne z jednego polecenia.”
+* „Warstwa SQL i dashboard Power BI są odtwarzalne z jednego polecenia.”
 
 **Czego nie mówić:**
 
@@ -91,7 +91,7 @@ End-to-end project on 1.017M store-day records: data cleaning and quality valida
 | SQL | JOIN, GROUP BY, CTE, funkcje okna, projekt schematu |
 | Modelowanie | walidacja czasowa, XGBoost, RF, regresja, SARIMAX, metryki |
 | Inżynieria cech | lagi, rolling, bez wycieku, testy perturbacyjne |
-| Power BI | specyfikacja modelu, DAX, makiety — **bez** pliku PBIX w tym środowisku |
+| Power BI | działający plik .pbix (3 strony), model i miary DAX |
 | MLOps | podstawy: konfiguracja, reproducibility, zapis modelu; **brak** wdrożenia produkcyjnego |
 | Statystyka | ADF, ACF/PACF, OLS z HC3, testy nieparametryczne, interpretacja z zastrzeżeniami |
 

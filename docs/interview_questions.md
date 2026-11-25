@@ -70,9 +70,9 @@ Pytania dotyczą projektu Rossmann. Odpowiedzi są napisane tak, jak można je w
 
 ## 9. Po co SQL i Power BI, skoro analiza jest w Pythonie?
 
-**Odpowiedź.** SQL pokazuje, że potrafię pracować z danymi w silniku relacyjnym, a nie tylko w pandas. Model to prosta gwiazda: fakt `train_sales` i wymiary `stores` oraz `test_sales`. 13 zapytań używa JOIN, GROUP BY, CTE i funkcji okna: ranking sklepów z `RANK()`, wzrost miesiąc do miesiąca z `LAG()`, udział w sprzedaży z `SUM() OVER ()`, średnia krocząca 28 dni z ramką `ROWS BETWEEN`. Power BI z kolei jest warstwą decyzyjną: specyfikacja modelu, relacji i 30+ miar DAX, w tym RMSPE i WAPE. Nie dostarczyłem pliku PBIX, bo Power BI Desktop nie był dostępny w środowisku — zamiast fikcyjnego pliku dałem pełną specyfikację, eksporty CSV i makiety. To jest uczciwe: rekruter może odtworzyć dashboard w 15 minut.
+**Odpowiedź.** SQL pokazuje, że potrafię pracować z danymi w silniku relacyjnym, a nie tylko w pandas. Model to prosta gwiazda: fakt `train_sales` i wymiary `stores` oraz `test_sales`. 13 zapytań używa JOIN, GROUP BY, CTE i funkcji okna: ranking sklepów z `RANK()`, wzrost miesiąc do miesiąca z `LAG()`, udział w sprzedaży z `SUM() OVER ()`, średnia krocząca 28 dni z ramką `ROWS BETWEEN`. Power BI jest warstwą decyzyjną: plik `.pbix` ma trzy strony, model gwiazdy i ponad 30 miar DAX, w tym RMSPE i WAPE. Plik jest w repozytorium i otwiera się z danymi w cache; odświeżenie wymaga eksportów CSV, których nie publikuję z powodu licencji Kaggle.
 
-**Na co uważać:** nie twierdź, że „zbudowałem dashboard w Power BI”, jeśli plik PBIX nie istnieje; mów „zaprojektowałem i udokumentowałem dashboard oraz makiety”.
+**Na co uważać:** możesz powiedzieć, że zbudowałem dashboard Power BI, bo plik `.pbix` istnieje i został otwarty w Desktopie. Jednocześnie powiedz, że raport ma dane w cache, a pełne odświeżenie wymaga eksportów CSV.
 
 ---
 

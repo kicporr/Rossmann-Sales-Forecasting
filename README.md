@@ -77,7 +77,7 @@ Key facts established in `notebooks/01_data_understanding.ipynb`:
 | Modelling | scikit-learn, XGBoost, statsmodels |
 | Visualisation | matplotlib, seaborn |
 | Database | SQLite (window functions, CTEs, JOINs) |
-| Dashboard | Working `.pbix`, DAX measures, HTML mockups |
+| Dashboard | Working `.pbix`, real screenshots, DAX measures |
 | Quality | pytest (17 tests), automated leakage and data-quality checks |
 | Reproducibility | YAML configuration, fixed random seeds, one-command pipeline |
 
@@ -257,19 +257,19 @@ Full recommendations, with observation → conclusion → business meaning → l
 
 ## Dashboard
 
-The ready-to-open report is **`dashboard/Rossmann-Sales-Dashboard.pbix`**. It has three pages (overview, drivers, forecast/error), an import data model and the aggregated data cached inside the file; open it without any external CSV. Refreshing the model requires the flat files in `dashboard/data/`.
+The ready-to-open report is **`dashboard/Rossmann-Sales-Dashboard.pbix`**. It has three pages (overview, drivers, forecast/error), an import data model and the aggregated data cached inside the file; open it without any external CSV. To refresh it, regenerate the flat files with `python -m src.dashboard_export` into `dashboard/data/`.
 
 * `dashboard/Rossmann-Sales-Dashboard.pbix` - working Power BI report with the Rossmann model and measures.
+* `dashboard/screenshots/` - real screenshots exported from the `.pbix` file, one per page.
 * `dashboard/dashboard_specification.md` - data model, relationships, page layouts and interactions.
 * `dashboard/dax_measures.md` - 30+ production-ready DAX measures, including RMSPE and WAPE.
-* `dashboard/data/` - flat-file exports used by the model queries.
-* `dashboard/mockups/` - high-fidelity page mockups (HTML + PNG) kept as design references.
+* `dashboard/data/` - flat-file exports used by the model queries (regenerated, not committed).
 
-![Sales Overview](dashboard/mockups/page1_sales_overview.png)
+![Sales Overview](dashboard/screenshots/rossmann-pbix-overview.png)
 
-![Sales Drivers](dashboard/mockups/page2_sales_drivers.png)
+![Sales Drivers](dashboard/screenshots/rossmann-pbix-drivers.png)
 
-![Sales Forecast](dashboard/mockups/page3_sales_forecast.png)
+![Sales Forecast](dashboard/screenshots/rossmann-pbix-forecast.png)
 
 ---
 
@@ -296,13 +296,12 @@ rossmann-sales-forecasting/
 │   ├── create_tables.sql
 │   ├── analytical_queries.sql   # 13 queries with CTE / window functions
 │   └── build_database.py
-├── dashboard/                   # working .pbix, spec, DAX, mockups, data export
+├── dashboard/                   # working .pbix, real screenshots, spec, DAX
 ├── reports/                     # EDA, model comparison, business recommendations
 ├── docs/                        # methodology, learning guide, CV, interview Q&A
-├── portfolio/                   # PL/EN case study + home-page integration snippets
 ├── scripts/                     # repository hygiene checks
 ├── tests/                       # 17 pytest tests, including anti-leakage
-└── outputs/                     # figures, metrics, predictions, model artefacts
+└── outputs/                     # figures, metrics, submission (binary model artefacts are regenerable)
 ```
 
 ---
