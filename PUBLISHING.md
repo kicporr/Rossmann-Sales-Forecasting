@@ -42,23 +42,26 @@ Po pushu sprawdź:
 - `src/components/CaseStudyView.astro` — obsługa okładki i obrazów w sekcjach,
 - `src/components/PageBackdrop.astro` + `src/data/traces.ts` — tło z przebiegiem sprzedaży,
 - `src/data/ui.ts` — `01-04`, „Cztery pytania. Cztery dowody.”,
-- `public/img/rossmann-*` — okładka, wykresy, screeny dashboardu i OG image.
+- `public/img/rossmann-*` — okładka, wykresy, trzy prawdziwe screeny z `.pbix` i OG image.
 
-Build został już wykonany: `site-v2/dist` zawiera oba adresy i sitemapę. Wystarczy wdrożyć `dist` przez Cloudflare Pages (direct upload) albo wypchnąć repo strony, jeśli jest podłączone do Cloudflare. Nie ma potrzeby ręcznego kopiowania plików.
+Build został już wykonany i wdrożony na Cloudflare Pages. Produkcja:
 
-Jeśli wdrażasz starsze repo `site` albo chcesz wariant `public/`, użyj `portfolio/INTEGRACJA.md`: tam są gotowe pliki HTML, CSS i snippety do strony głównej.
+- https://kacper-teichert.pages.dev/projekty/rossmann/
+- https://kacper-teichert.pages.dev/en/projects/rossmann/
+
+Po zmianie treści albo obrazków powtórz build i direct upload:
 
 ```bash
 cd Desktop/Portfolio/site-v2
 npm run build
-# wgraj zawartość dist/ przez Cloudflare Pages
+npx --yes wrangler pages deploy dist --project-name=kacper-teichert --branch=main --commit-dirty=true
 ```
 
 ## 3. Weryfikacja po deployu
 
 - [ ] `/projekty/rossmann/` i `/en/projects/rossmann/` zwracają 200.
 - [ ] Przełącznik PL/EN działa w obie strony.
-- [ ] Wszystkie 5 obrazów ma `naturalWidth > 0`.
+- [ ] Wszystkie obrazy (okładka, wykresy, 3 screeny `.pbix`) mają `naturalWidth > 0`.
 - [ ] Na 390 px `scrollWidth === clientWidth`.
 - [ ] Karta na stronie głównej prowadzi do case study.
 - [ ] Kicker mówi `01-04`.
